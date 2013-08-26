@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DtmfApp</title>
+  <title>Downtown Sound Music Festival</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12 header">
+      <%= image_tag "header.jpg", alt: "Downtown Sound Music Festival, La Crosse, WI" %>
+    </div>
+  </div>	
 
-<%= yield %>
+  <%= yield %>
+</div>
+
+<script type="text/javascript">
+
+var $ = jQuery.noConflict();
+
+$(document).ready(function() {
+ $('#myCarousel').carousel({
+       interval: 5000,
+          cycle: true
+ });
+});
+
+</script>
+
 
 </body>
 </html>

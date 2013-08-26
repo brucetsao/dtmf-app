@@ -1,52 +1,148 @@
-<h1>Home</h1>
-<p><strong>Welcome to Downtown Sound Music Festival</strong></p>
+
+
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <%= image_tag "http://placehold.it/940x300", title: "Image 1" %>
+    </div>
+    <div class="item">
+      <%= image_tag "http://placehold.it/940x300", title: "Image 2" %>
+    </div>
+    <div class="item">
+      <%= image_tag "http://placehold.it/940x300", title: "Image 3" %>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
 
 
 <h1>Schedule</h1>
+<div class="row-fluid sched-bar">
+  <div class="span2">
+    <h2>Friday Night<br /><span>Aug 30</span></h2>
+  </div>
+  <div class="span10">
+    <ul class="row-fluid">
+      <li class="span2">
+        <%= image_tag "johngorka2.jpg", alt: "John Gorka" %>
+        <h4>John Gorka</h4> at The Pump House-$18 advance $21 day of show
+      </li>
+      <li class="span2">
+        <%= image_tag "chastity_brown.jpg", alt: "Chastity Brown" %>
+      
+        <h4>Chastity Brown</h4>
+        at The Root Note
+      </li>
+      <li class="span2">
+         <%= image_tag "ericsomer.jpg", alt: "Eric Sommer" %> 
+        
+        <h4>Eric Sommer</h4> at The Bodega
+      </li>
+    </ul>
+  </div>
+</div>
 
-<h2>Friday Night August 30th:</h2>
+<div class="row-fluid sched-bar">
+  <div class="span2">
+    <h2>Saturday<br /><span>Aug 31</span></h2>
+    <p>The Pearl Street block stage (free) line-up:</p>
+  </div>
+  <div class="span10">
+    <ul class="row-fluid">
+      <li class="span2">
+        
+        <%= image_tag "clicktrack2.jpg", alt: "Click Track" %>
+        <h4>Click Track</h4> 2:00-3:00 PM
+      </li>
+      <li class="span2">
+        <%= image_tag "blackriverrevue.jpg", alt: "Black River Revue" %>
+        <h4>Black River Revue</h4>3:30-4:30 PM
+      </li>
+      <li class="span2">
+        <%= image_tag "faymerochelle.jpg", alt: "Fayme Rochelle and the Waxwings" %>
+        <h4>Fayme Rochelle &amp; the Waxwings</h4>5:00-6:00 PM</li>
+      <li class="span2">
+        <%= image_tag "natty-nation.jpg", alt: "Natty Nation" %>
+        <h4>Natty Nation</h4>6:30-8:00 PM</li>
+      <li class="span2">
+        <%= image_tag "rostermccabe.jpg", alt: "Roster McCabe" %>
+        <h4>Roster McCabe</h4>8:30-10:00 PM </li>
+    </ul>
+  </div>
+</div>
 
-<ul>
+<div class="row-fluid sched-bar">
+  <div class="span2">
+    <h2>Saturday Night<br /><span>Aug 31</span></h2>
+  </div>
+  <div class="span10">
+    <ul class="row-fluid">
+      <li class="span2">
+        <%= image_tag "http://placehold.it/150x150", alt: "Gary Louris" %>
+        <h4>Gary Louris (Trio)</h4> at The Cavalier Theater-$25 advance and $30 day of show</li>
+      <li class="span2">
+        <%= image_tag "rostermccabe.jpg", alt: "Roster McCabe" %>
+        <h4>Roster McCabe</h4> at The Popcorn</li>
+      <li class="span2">
+        <%= image_tag "faymerochelle.jpg", alt: "Fayme Rochelle &amp; The Waxwings" %>
+        <h4>Fayme Rochelle &amp; The Waxwings</h4> at The Bodega</li>
 
-<li>John Gorka at The Pump House-$18 advance $21 day of show</li>
-<li>Chastity Brown at The Root Note</li>
-<li>Eric Sommer at The Bodega</li>
-</ul>
+      <li class="span2">
+        <%= image_tag "blackriverrevue.jpg", alt: "Black River Revue" %>
+        <h4>Black River Revue</h4> at The Root Note</li>
+    </ul>
+  </div>
+</div>
 
-<h2>Saturday August 31st:</h2>
+<div class="row-fluid sched-bar">
+  <div class="span2">
+    <h2>Sunday<br /><span>Sept 1</span></h2>
+    <p>The Pearl Street block stage (free) line-up:</p>
+  </div>
+  <div class="span10">
+    
+    <ul class="row-fluid">
+      <li class="span2">
+        <%= image_tag "mikemunson.jpg", alt: " Mike Munson" %>
+        <h4> Mike Munson</h4>3:30-4:30 PM</li>
+      <li class="span2">
+        <%= image_tag "genwiz.jpg", alt: "General B and the Wiz" %>
+        <h4>General B and the Wiz</h4>5:00-6:00 PM</li>
+      <li class="span2">
+        <%= image_tag "bigtreebonsai.jpg", alt: "Bigtree Bonsai" %>
+        <h4>Bigtree Bonsai</h4>6:30-8:00 PM</li>
+      <li class="span2">
+        <%= image_tag "tugg.jpg", alt: "T.U.G.G." %>
+        <h4>T.U.G.G.</h4>8:30-10:00 PM</li>
+    </ul>
+  </div>
+</div>
 
-<ul>
-<li>The Pearl Street block stage (free) line-up:</li>
-<li>2:00-3:00 PM Click Track</li>
-<li>3:30-4:30 PM Black River Revue</li>
-<li>5:00-6:00 PM Fayme Rochelle &amp; the Waxwings</li>
-<li>6:30-8:00 PM Natty Nation</li>
-<li>8:30-10:00 PM Roster McCabe</li>
-</ul>
+<div class="row-fluid sched-bar">
+  <div class="span2">
+    <h2>Sunday Night<br /><span>Sept 1</span></h2>
+  </div>
+  <div class="span10">
+    <ul class="row-fluid">
+      <li class="span2">
+        <%= image_tag "bigtreebonsai.jpg", alt: "Bigtree Bonsai" %>
+        <h4>Big Tree Bonsai</h4>The Popcorn</li>
 
-<h2>Saturday Night August 31st:</h2>
-<ul>
-
-<li>Gary Louris (Trio) at The Cavalier Theater-$25 advance and $30 day of show</li>
-<li>Roster McCabe at The Popcorn</li>
-<li>Fayme Rochelle and The Waxwings at The Bodega</li>
-<li>Black River Revue at The Root Note</li>
-</ul>
-
-<h2>Sunday September 1st:</h2>
-<p>The Pearl Street block stage (free) line-up:</p>
-
-<ul>
-<li>3:30-4:30 PM Mike Munson</li>
-<li>5:00-6:00 PM General B and the Wiz</li>
-<li>6:30-8:00 PM Bigtree Bonsai</li>
-<li>8:30-10:00 PM T.U.G.G.</li>
-</ul>
-
-<h2>Sunday Night September 1st:</h2>
-
-<ul>
-<li>Big Tree Bonsai- The Popcorn</li>
-<li>General B and The Wiz- The Root Note</li>
-<li>Mike Munson- The Bodega</li>
-</ul>
+      <li class="span2">
+        <%= image_tag "genwiz.jpg", alt: "General B and The Wiz" %>
+        <h4>General B and The Wiz</h4>The Root Note</li>
+      <li class="span2">
+        <%= image_tag "mikemunson.jpg", alt: "Mike Munson" %>
+        <h4>Mike Munson</h4>The Bodega</li>
+    </ul>
+  </div>
+</div>

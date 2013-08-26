@@ -1,3 +1,101 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$black: 	#000000;
+$gray: 		#747474;
+$lightgray:	#a3a3a3;
+$green: 	#d9f98e;
+$mint: 		#daf8e0;
+$powerblue: #daf8e0;
+$orange: 	#feb415;
+$white: 	#ffffff;
+
+@mixin rotate-minus-45degrees {
+		/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+@mixin impact-font {
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+
+body {
+	background-color:$gray;
+}
+
+.header {
+
+	img {
+		width:100%;
+	}
+}
+
+.sched-bar {
+	height:auto;
+	margin-bottom:20px;
+	border-radius:15px;
+	background-color: $gray - 5;
+	padding:20px 0 15px 0;
+	li {
+		display:inline-block;
+		width:200px;
+		float:left;
+		color: $lightgray;
+		img {
+			border-radius:50%;
+		}
+	}
+
+}
+
+.carousel-inner {
+	.item {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+
+h1 {
+	color:$green;
+}
+
+h2 {
+	@impact-font;
+	text-align:right;
+	font-size:23px;
+	line-height:1.15em;
+	color:$lightgray;
+	span {
+		font-size:36px;
+		text-transform: uppercase;
+		letter-spacing: -2px;
+	}
+}
+
+h4 {
+	color: $mint;
+}
+
+.span2 p {
+	text-align:right;
+}
+
+
